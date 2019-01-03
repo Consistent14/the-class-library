@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace DotnetAutocad.DatabaseHelper
 {
-    class DatabaseHelper
+   public class DatabaseHelper
     {
+public void Run(){
+}
     }
 }
