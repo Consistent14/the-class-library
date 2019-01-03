@@ -1,0 +1,12 @@
+C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetAutocad\obj\Debug\DotnetAutocad.csproj.CoreCompileInputs.cache
+C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetAutocad\bin\Debug\DotnetAutocad.dll
+C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetAutocad\bin\Debug\DotnetAutocad.pdb
+C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetAutocad\bin\Debug\accoremgd.dll
+C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetAutocad\bin\Debug\AcCui.dll
+C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetAutocad\bin\Debug\acdbmgd.dll
+C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetAutocad\bin\Debug\acmgd.dll
+C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetAutocad\bin\Debug\AcWindows.dll
+C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetAutocad\bin\Debug\AdWindows.dll
+C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetAutocad\obj\Debug\DotnetAutocad.csproj.CopyComplete
+C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetAutocad\obj\Debug\DotnetAutocad.dll
+C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetAutocad\obj\Debug\DotnetAutocad.pdb
