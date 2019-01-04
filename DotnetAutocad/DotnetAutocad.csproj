@@ -60,6 +60,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -77,6 +78,12 @@
     <Compile Include="UIHelper\MyApplication.cs" />
     <Compile Include="UIHelper\LegalDrafting.cs" />
     <Compile Include="UIHelper\Main.cs" />
+    <Compile Include="UIHelper\Ribbon.cs" />
+    <Compile Include="UIHelper\RibbonImage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RibbonImage.resx</DependentUpon>
+    </Compile>
     <Compile Include="UIHelper\RibbonRun.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -84,8 +91,31 @@
     <Content Include="Catalogue.txt" />
     <Content Include="DrawingHelper\DrawingHelper.txt" />
     <Content Include="InteractiveHelper\InteractiveHelper.txt" />
+    <Resource Include="UIHelper\Resource\Copy.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="UIHelper\Resource\Line.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="UIHelper\Resource\Move.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="UIHelper\Resource\MText.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="UIHelper\Resource\Stretch.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="UIHelper\Resource\Text.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Content Include="UIHelper\UIHelper.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="UIHelper\RibbonImage.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RibbonImage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
