@@ -75,6 +75,7 @@
     <Compile Include="DrawingHelper\TextHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UIHelper\Class1.cs" />
+    <Compile Include="UIHelper\ImageHelper.cs" />
     <Compile Include="UIHelper\MyApplication.cs" />
     <Compile Include="UIHelper\LegalDrafting.cs" />
     <Compile Include="UIHelper\Main.cs" />
@@ -103,18 +104,17 @@
     <Resource Include="UIHelper\Resource\MText.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="UIHelper\Resource\Stretch.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="UIHelper\Resource\Text.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Content Include="UIHelper\Resource\Stretch.ico" />
     <Content Include="UIHelper\UIHelper.txt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UIHelper\RibbonImage.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RibbonImage.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

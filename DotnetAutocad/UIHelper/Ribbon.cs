@@ -10,6 +10,7 @@ using res = DotnetAutocad.UIHelper.RibbonImage;
 using System.Drawing;
 using System.Windows.Interop;
 using System.Runtime.InteropServices;
+using System.Windows.Media;
 
 namespace DotnetAutocad.UIHelper
 {
@@ -111,8 +112,8 @@ namespace DotnetAutocad.UIHelper
             buttonLine.ShowImage = true;//按钮显示图像
             buttonLine.ShowText = true;//按钮显示文字
             //设置按钮的大小图像
-            buttonLine.Image = ConvertTo(res.Line.ToBitmap());
-            buttonLine.LargeImage = ConvertTo(res.Line.ToBitmap());
+            buttonLine.Image = ImageHelper.ChangeBitmapToImageSource(res.Line.ToBitmap());
+            buttonLine.LargeImage = ImageHelper.ChangeBitmapToImageSource(res.Line.ToBitmap());
             buttonLine.Size = RibbonItemSize.Large;//以大图像的形式表示按钮
             //按钮文字和图像的方向为竖直
             buttonLine.Orientation = System.Windows.Controls.Orientation.Vertical;
@@ -126,15 +127,15 @@ namespace DotnetAutocad.UIHelper
             //设置提示的附加内容
             toolTipLine.ExpandedContent = "使用Line命令，可以创建一系列连续的直线段。每条线段都是可以单独进行编辑的直线对象。";
             //设置在提示附加内容下显示的图像
-            toolTipLine.ExpandedImage = ConvertTo(res.Line.ToBitmap());
+            toolTipLine.ExpandedImage = ImageHelper.ChangeBitmapToImageSource(res.Line.ToBitmap());
             buttonLine.ToolTip = toolTipLine;//设置“直线”按钮的提示
             //创建“单行文字”按钮
             RibbonButton buttonText = new RibbonButton();
             buttonText.Name = "单行文字";
             buttonText.Text = "文字";
             buttonText.ShowImage = true;
-            buttonText.LargeImage = ConvertTo(res.Text.ToBitmap());
-            buttonText.Image = ConvertTo(res.Text.ToBitmap());
+            buttonText.LargeImage = ImageHelper.ChangeBitmapToImageSource(res.Text.ToBitmap());
+            buttonText.Image = ImageHelper.ChangeBitmapToImageSource(res.Text.ToBitmap());
             buttonText.Size = RibbonItemSize.Large;
             buttonText.CommandParameter = "Text ";
             buttonText.CommandHandler = new RibbonCommandHandler();
@@ -143,8 +144,8 @@ namespace DotnetAutocad.UIHelper
             buttonMText.Name = "多行文字";
             buttonMText.Text = "文字";
             buttonMText.ShowImage = true;
-            buttonMText.LargeImage = ConvertTo(res.MText.ToBitmap());
-            buttonMText.Image = ConvertTo(res.MText.ToBitmap());
+            buttonMText.LargeImage = ImageHelper.ChangeBitmapToImageSource(res.MText.ToBitmap());
+            buttonMText.Image = ImageHelper.ChangeBitmapToImageSource(res.MText.ToBitmap());
             buttonMText.Size = RibbonItemSize.Large;
             buttonMText.CommandParameter = "MText ";
             buttonMText.CommandHandler = new RibbonCommandHandler();
@@ -166,7 +167,7 @@ namespace DotnetAutocad.UIHelper
                 Text = "移动",
                 ShowImage = true,
                 ShowText = true,
-                Image = ConvertTo(res.Move.ToBitmap()),
+                Image = ImageHelper.ChangeBitmapToImageSource(res.Move.ToBitmap()),
                 Size = RibbonItemSize.Standard,
                 CommandParameter = "Move ",
                 CommandHandler = new RibbonCommandHandler(),
@@ -180,7 +181,7 @@ namespace DotnetAutocad.UIHelper
                 Text = "复制",
                 ShowImage = true,
                 ShowText = true,
-                Image = ConvertTo(res.Copy.ToBitmap()),
+                Image = ImageHelper.ChangeBitmapToImageSource(res.Copy.ToBitmap()),
                 Size = RibbonItemSize.Standard,
                 CommandParameter = "Copy ",
                 CommandHandler = new RibbonCommandHandler(),
@@ -194,7 +195,7 @@ namespace DotnetAutocad.UIHelper
                 Text = "拉伸",
                 ShowImage = true,
                 ShowText = true,
-                Image = ConvertTo(res.Stretch.ToBitmap()),
+                Image = ImageHelper.ChangeBitmapToImageSource(res.Stretch.ToBitmap()),
                 Size = RibbonItemSize.Standard,
                 CommandParameter = "Stretch ",
                 CommandHandler = new RibbonCommandHandler()
@@ -224,8 +225,8 @@ namespace DotnetAutocad.UIHelper
             buttonLine.ShowImage = true;//按钮显示图像
             buttonLine.ShowText = true;//按钮显示文字
             //设置按钮的大小图像
-            buttonLine.Image = ConvertTo(res.Line.ToBitmap());
-            buttonLine.LargeImage = ConvertTo(res.Line.ToBitmap());
+            buttonLine.Image = ImageHelper.ChangeBitmapToImageSource(res.Line.ToBitmap());
+            buttonLine.LargeImage = ImageHelper.ChangeBitmapToImageSource(res.Line.ToBitmap());
             buttonLine.Size = RibbonItemSize.Large;//以大图像的形式表示按钮
             //按钮文字和图像的方向为竖直
             buttonLine.Orientation = System.Windows.Controls.Orientation.Vertical;
@@ -239,15 +240,15 @@ namespace DotnetAutocad.UIHelper
             //设置提示的附加内容
             toolTipLine.ExpandedContent = "使用Line命令，可以创建一系列连续的直线段。每条线段都是可以单独进行编辑的直线对象。";
             //设置在提示附加内容下显示的图像
-            toolTipLine.ExpandedImage = ConvertTo(res.Line.ToBitmap());
+            toolTipLine.ExpandedImage = ImageHelper.ChangeBitmapToImageSource(res.Line.ToBitmap());
             buttonLine.ToolTip = toolTipLine;//设置“直线”按钮的提示
             //创建“单行文字”按钮
             RibbonButton buttonText = new RibbonButton();
             buttonText.Name = "单行文字";
             buttonText.Text = "文字";
             buttonText.ShowImage = true;
-            buttonText.LargeImage = ConvertTo(res.Text.ToBitmap());
-            buttonText.Image = ConvertTo(res.Text.ToBitmap());
+            buttonText.LargeImage = ImageHelper.ChangeBitmapToImageSource(res.Text.ToBitmap());
+            buttonText.Image = ImageHelper.ChangeBitmapToImageSource(res.Text.ToBitmap());
             buttonText.Size = RibbonItemSize.Large;
             buttonText.CommandParameter = "Text ";
             buttonText.CommandHandler = new RibbonCommandHandler();
@@ -256,8 +257,8 @@ namespace DotnetAutocad.UIHelper
             buttonMText.Name = "多行文字";
             buttonMText.Text = "文字";
             buttonMText.ShowImage = true;
-            buttonMText.LargeImage = ConvertTo(res.MText.ToBitmap());
-            buttonMText.Image = ConvertTo(res.MText.ToBitmap());
+            buttonMText.LargeImage = ImageHelper.ChangeBitmapToImageSource(res.MText.ToBitmap());
+            buttonMText.Image = ImageHelper.ChangeBitmapToImageSource(res.MText.ToBitmap());
             buttonMText.Size = RibbonItemSize.Large;
             buttonMText.CommandParameter = "MText ";
             buttonMText.CommandHandler = new RibbonCommandHandler();
@@ -279,7 +280,7 @@ namespace DotnetAutocad.UIHelper
                 Text = "移动",
                 ShowImage = true,
                 ShowText = true,
-                Image = ConvertTo(res.Move.ToBitmap()),
+                Image = ImageHelper.ChangeBitmapToImageSource(res.Move.ToBitmap()),
                 Size = RibbonItemSize.Standard,
                 CommandParameter = "Move ",
                 CommandHandler = new RibbonCommandHandler(),
@@ -293,7 +294,7 @@ namespace DotnetAutocad.UIHelper
                 Text = "复制",
                 ShowImage = true,
                 ShowText = true,
-                Image = ConvertTo(res.Copy.ToBitmap()),
+                Image = ImageHelper.ChangeBitmapToImageSource(res.Copy.ToBitmap()),
                 Size = RibbonItemSize.Standard,
                 CommandParameter = "Copy ",
                 CommandHandler = new RibbonCommandHandler(),
@@ -307,7 +308,7 @@ namespace DotnetAutocad.UIHelper
                 Text = "拉伸",
                 ShowImage = true,
                 ShowText = true,
-                Image = ConvertTo(res.Stretch.ToBitmap()),
+                Image = ImageHelper.ChangeBitmapToImageSource(res.Stretch.ToBitmap()),
                 Size = RibbonItemSize.Standard,
                 CommandParameter = "Stretch ",
                 CommandHandler = new RibbonCommandHandler()
@@ -325,7 +326,7 @@ namespace DotnetAutocad.UIHelper
                 Text = "移动",
                 ShowImage = true,
                 ShowText = true,
-                Image = ConvertTo(res.Move.ToBitmap()),
+                Image = ImageHelper.ChangeBitmapToImageSource(res.Move.ToBitmap()),
                 Size = RibbonItemSize.Standard,
                 CommandParameter = "Move ",
                 CommandHandler = new RibbonCommandHandler(),
@@ -339,7 +340,7 @@ namespace DotnetAutocad.UIHelper
                 Text = "复制",
                 ShowImage = true,
                 ShowText = true,
-                Image = ConvertTo(res.Copy.ToBitmap()),
+                Image = ImageHelper.ChangeBitmapToImageSource(res.Copy.ToBitmap()),
                 Size = RibbonItemSize.Standard,
                 CommandParameter = "Copy ",
                 CommandHandler = new RibbonCommandHandler(),
@@ -353,7 +354,7 @@ namespace DotnetAutocad.UIHelper
                 Text = "拉伸",
                 ShowImage = true,
                 ShowText = true,
-                Image = ConvertTo(res.Stretch.ToBitmap()),
+                Image = ImageHelper.ChangeBitmapToImageSource(res.Stretch.ToBitmap()),
                 Size = RibbonItemSize.Standard,
                 CommandParameter = "Stretch ",
                 CommandHandler = new RibbonCommandHandler()
@@ -382,8 +383,8 @@ namespace DotnetAutocad.UIHelper
             buttonLine22.ShowImage = true;//按钮显示图像
             buttonLine22.ShowText = true;//按钮显示文字
             //设置按钮的大小图像
-            buttonLine22.Image = ConvertTo(res.Line.ToBitmap());
-            buttonLine22.LargeImage = ConvertTo(res.Line.ToBitmap());
+            buttonLine22.Image = ImageHelper.ChangeBitmapToImageSource(res.Stretch.ToBitmap());
+            buttonLine22.LargeImage = ImageHelper.ChangeBitmapToImageSource(res.Stretch.ToBitmap());
             buttonLine22.Size = RibbonItemSize.Large;//以大图像的形式表示按钮
             //按钮文字和图像的方向为竖直
             buttonLine22.Orientation = System.Windows.Controls.Orientation.Vertical;
@@ -413,6 +414,10 @@ namespace DotnetAutocad.UIHelper
             bind2.Path = new System.Windows.PropertyPath(".");
             lunitsRibbonCombo.ItemTemplateTextBinding = bind2;
 
+            lunitsRibbonCombo.Image = ImageHelper.ChangeBitmapToImageSource(res.Line.ToBitmap());
+            //lunitsRibbonCombo.LargeImage= ImageHelper.ChangeBitmapToImageSource(res.MText.ToBitmap());
+            lunitsRibbonCombo.Size = RibbonItemSize.Large;//以大图像的形式表示按钮
+       
 
             sourcePanel2.Items.Add(buttonLine22);
             sourcePanel2.Items.Add(c1);
@@ -442,30 +447,6 @@ namespace DotnetAutocad.UIHelper
                 Document doc = AcadApp.DocumentManager.MdiActiveDocument;
                 doc.SendStringToExecute(button.CommandParameter.ToString(), true, false, true);
             }
-        }
-
-        [DllImport("gdi32.dll")]
-
-        static extern bool DeleteObject(IntPtr hObject);
-
-        public static BitmapSource ConvertTo(Bitmap bitmap)
-        {
-            var hBitmap = bitmap.GetHbitmap();
-
-            try
-            {
-                var source = Imaging.CreateBitmapSourceFromHBitmap(
-                    hBitmap,
-                    IntPtr.Zero,
-                    Int32Rect.Empty,
-                    BitmapSizeOptions.FromEmptyOptions());
-
-                return source;
-            }
-            finally
-            {
-                DeleteObject(hBitmap);
-            }
-        }
+        }    
     }
 }
