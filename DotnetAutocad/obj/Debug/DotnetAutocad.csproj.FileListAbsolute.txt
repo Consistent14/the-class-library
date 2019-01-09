@@ -25,3 +25,6 @@ D:\git\the-class-library\DotnetAutocad\obj\Debug\DotnetAutocad.csproj.CoreCompil
 D:\git\the-class-library\DotnetAutocad\obj\Debug\DotnetAutocad.csproj.CopyComplete
 D:\git\the-class-library\DotnetAutocad\obj\Debug\DotnetAutocad.dll
 D:\git\the-class-library\DotnetAutocad\obj\Debug\DotnetAutocad.pdb
+D:\Git\the-class-library\DotnetAutocad\bin\Debug\Newtonsoft.Json.dll
+D:\Git\the-class-library\DotnetAutocad\bin\Debug\Newtonsoft.Json.pdb
+D:\Git\the-class-library\DotnetAutocad\bin\Debug\Newtonsoft.Json.xml

@@ -26,9 +26,17 @@ namespace DotnetAutocad.UIHelper
             throw new NotImplementedException();
         }
 
-        void AddRibbon()
-        {
 
+        [CommandMethod("addrb")]
+        public void AddRibbon()
+        {
+            var rbControl = ComponentManager.Ribbon;
+
+            var rbTabProxy = new RibbonTabProxy("1", "1a1");
+
+            rbTabProxy.AddRibbonTab("2", "2332");
+
+            rbTabProxy.AddRibbonTab("3", "2332");
         }
     }
 }
