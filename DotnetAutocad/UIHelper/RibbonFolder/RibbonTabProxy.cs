@@ -45,17 +45,21 @@ namespace DotnetAutocad.UIHelper
         {
             _rbControl = ComponentManager.Ribbon;
 
-            if (_rbButtonCollections == null)
+            if (_rbTabCollections == null)
             {
-                _rbButtonCollections = new List<RibbonButton>();
+                var tab = new RibbonTab() { Title = title, Id = id };
 
-                var tabJson = JsonConvert.SerializeObject(_rbTabCollections);
+                _rbTabCollections = new List<RibbonTab>() { tab };
+
+                var midd = new Middle() { RibbonTabs = _rbTabCollections };
+
+                var tabJson = JsonConvert.SerializeObject(midd);
 
                 var assemblyLocation = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
 
-                assemblyLocation = @"D:\Git\the-class-library\DotnetAutocad\bin\Debug";
+                assemblyLocation = @"D:\Git\the-class-library\DotnetAutocad";
 
-                _rbTabCollectionsJsonPath = Path.Combine(assemblyLocation,$"{nameof(RibbonTabProxy)}.json");
+                _rbTabCollectionsJsonPath = Path.Combine(assemblyLocation, $"{nameof(RibbonTabProxy)}.json");
 
                 using (var fileStream = new FileStream(_rbTabCollectionsJsonPath, FileMode.OpenOrCreate, FileAccess.ReadWrite))
                 {
@@ -136,13 +140,23 @@ namespace DotnetAutocad.UIHelper
 
         private bool IsNotSameTabId(string id)
         {
-
-            if (!(JsonConvert.DeserializeObject(_rbTabCollectionsJsonPath) is List<RibbonTab> collection))
+            if (!File.Exists(_rbTabCollectionsJsonPath))
             {
                 return false;
             }
 
-            foreach (var item in collection)
+            var json = File.ReadAllText(_rbTabCollectionsJsonPath);
+
+            var middle = JsonConvert.DeserializeObject(json) as Middle;
+
+            if (middle == null)
+            {
+                return false;
+            }
+
+            var rbTabs = middle.RibbonTabs;
+
+            foreach (var item in rbTabs)
             {
                 if (item.Id != id)
                 {
@@ -232,7 +246,7 @@ namespace DotnetAutocad.UIHelper
 
         public void AddRibbonTab(string name, string id)
         {
-            var rbTab = new RibbonTab() { Name = name, Id = id };         
+            var rbTab = new RibbonTab() { Name = name, Id = id };
 
             if (IsNotSameTabId(id))
             {
@@ -265,5 +279,10 @@ namespace DotnetAutocad.UIHelper
                 return new RibbonButton();
             }
         }
+    }
+
+    public class Middle
+    {
+        public List<RibbonTab> RibbonTabs { get; set; }
     }
 }

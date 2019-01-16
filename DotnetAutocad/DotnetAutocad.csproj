@@ -74,7 +74,14 @@
   <ItemGroup>
     <Compile Include="ColorIndex.cs" />
     <Compile Include="DatabaseHelper\DatabaseHelper.cs" />
+    <Compile Include="DatabaseHelper\QueryEntity.cs" />
     <Compile Include="DatabaseWorker.cs" />
+    <Compile Include="DbojectHelper\CurveHelper.cs" />
+    <Compile Include="DbojectHelper\DimensionHelper.cs" />
+    <Compile Include="DbojectHelper\HatchHelper.cs" />
+    <Compile Include="DbojectHelper\LayerHelper.cs" />
+    <Compile Include="DbojectHelper\PolylineHelper.cs" />
+    <Compile Include="DbojectHelper\TextHelper.cs" />
     <Compile Include="DrawingHelper\TextHelper.cs" />
     <Compile Include="Main\Ribbon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -126,5 +133,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -32,7 +32,7 @@ namespace DotnetAutocad.UIHelper
         {
             var rbControl = ComponentManager.Ribbon;
 
-            var rbTabProxy = new RibbonTabProxy("1", "1a1");
+            var rbTabProxy = new RibbonTabProxy("a", "1a1");
 
             rbTabProxy.AddRibbonTab("2", "2332");
 
