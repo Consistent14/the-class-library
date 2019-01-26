@@ -1,0 +1,6 @@
+F:\Small size is just right for threading needle\the-class-library\General\CsharpHelperClass\CsharpHelper\bin\Debug\CsharpHelper.dll
+F:\Small size is just right for threading needle\the-class-library\General\CsharpHelperClass\CsharpHelper\bin\Debug\CsharpHelper.pdb
+F:\Small size is just right for threading needle\the-class-library\General\CsharpHelperClass\CsharpHelper\obj\Debug\CsharpHelper.csprojAssemblyReference.cache
+F:\Small size is just right for threading needle\the-class-library\General\CsharpHelperClass\CsharpHelper\obj\Debug\CsharpHelper.csproj.CoreCompileInputs.cache
+F:\Small size is just right for threading needle\the-class-library\General\CsharpHelperClass\CsharpHelper\obj\Debug\CsharpHelper.dll
+F:\Small size is just right for threading needle\the-class-library\General\CsharpHelperClass\CsharpHelper\obj\Debug\CsharpHelper.pdb
