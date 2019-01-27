@@ -1,5 +1,0 @@
-C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetUnity3D\bin\Debug\DotnetUnity3D.dll
-C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetUnity3D\bin\Debug\DotnetUnity3D.pdb
-C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetUnity3D\obj\Debug\DotnetUnity3D.csproj.CoreCompileInputs.cache
-C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetUnity3D\obj\Debug\DotnetUnity3D.dll
-C:\Users\Test-Win10-64\Desktop\The class library\trunk\The class library\DotnetUnity3D\obj\Debug\DotnetUnity3D.pdb
